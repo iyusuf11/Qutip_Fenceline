@@ -1,0 +1,46 @@
+modes:
+  q1:
+    mode_type: "Qubit"
+    freq: 3.8312
+    alpha: -0.110
+    dim: 3
+  # q2:
+  #   mode_type: "Qubit"
+  #   freq: 5.06167
+  #   alpha: -0.161
+  #   dim: 3
+  #   T1: 100000 # ns
+  #   T2: 50000 # us
+  q3:
+    mode_type: "Qubit"
+    freq: 4.1081
+    alpha: -0.145
+    dim: 3
+  # q4:
+  #   mode_type: "Qubit"
+  #   freq: 4.54944
+  #   alpha: -0.1275
+  #   dim: 2
+  #   T1: 100000 # us
+  #   T2: 50000 # us
+  SNAIL:
+    mode_type: "SNAIL"
+    freq: 4.6844
+    g3: 0.2487
+    dim: 10
+    T1: 100000 # us
+    T2: 50000 # us
+
+couplings:
+  q1s:
+    g2: 0.19282
+    modes: [q1, SNAIL]
+  # q2s:
+  #   g2: 0.05467
+  #   modes: [q2, SNAIL]
+  q3s:
+    g2: 0.07676
+    modes: [q3, SNAIL]
+  # q4s:
+  #   g2: 0.0435
+  #   modes: [q4, SNAIL]
