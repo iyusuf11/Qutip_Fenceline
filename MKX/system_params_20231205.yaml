@@ -1,0 +1,17 @@
+modes:
+  q1: {freq: 3.8312, alpha: -0.110, dim: 2}
+  q3: {freq: 4.1081, alpha: -0.145, dim: 2}
+  SNAIL: {freq: 4.6844, g3: 0.3, dim: 10}
+
+  # q2: {freq: 5.06167, alpha: -0.161, dim: 2}
+  # q4: {freq: 4.54944, alpha: -0.1275, dim: 2}
+  # SNAIL: {freq: 4.27515, g3: 0, dim: 20}
+#  SNAIL: { freq: 4.27515, g3: 0.45, dim: 10}
+#  q4: { freq: 4.54944, alpha: -0.1275, dim: 2}
+#  q2: {freq: 5.06167, alpha: -0.161, dim: 2}
+
+couplings:
+  q1s: {g2: 0.19282, modes: ['q1', 'SNAIL']}
+  q3s: {g2: 0.07676, modes: ['q3', 'SNAIL']}
+#  q2s: {g2: 0, modes: ['q2', 'SNAIL']}
+#  q4s: {g2: 0, modes: ['q4', 'SNAIL']}
